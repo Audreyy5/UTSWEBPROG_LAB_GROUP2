@@ -201,6 +201,19 @@ foreach ($lists as $list) {
             <?php endif; ?>
         </div>
     </div>
+    <footer class="bg-gray-50 text-black py-6 mt-20">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <div class="mb-4">
+                <h3 class="font-bold text-lg">Contact Us</h3>
+                <p>Email: creatorofulist@gmail.com</p>
+                <p>Phone: +1 234 567 890</p>
+            </div>
+            <a href="profil.php" class="bg-red-300 text-black px-3 py-2 md:px-4 rounded hover:text-red-900 ">Our Profile</a>
+            <div class="text-sm text-gray-400 mt-5">
+                &copy; 2024 Ulist Website. Made with Love.
+            </div>
+        </div>
+    </footer>
 
 </body>
 
