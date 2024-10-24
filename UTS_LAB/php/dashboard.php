@@ -66,7 +66,7 @@ foreach ($lists as $list) {
         padding: 20px;
         border-radius: 8px;
         margin-bottom: 20px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     }
 
     .todo-card h3 {
@@ -104,7 +104,7 @@ foreach ($lists as $list) {
         <img class="w-32 h-22" src="../photos/logo.png"></img>
         <h1 class="text-2xl text-center font-bold mb-4 sm:mb-0">Welcome, <?= htmlspecialchars($user['username']) ?>! What do you want to do today?</h1>
         <div class="flex items-center mt-4 sm:mt-0">
-            <a href="create_todo.php" class="bg-red-700 text-white px-5 py-2 mr-2 rounded-md hover:bg-red-500 transition">Create To-Do List</a>
+            <a href="create_todo.php" class="bg-red-800 text-white px-5 py-2 mr-2 rounded-md hover:bg-red-400 transition">Create To-Do List</a>
             <a href="create_todo.php"><span class="material-icons-outlined mr-4 mt-2">add_task</span></a>
             <a href="profile.php">
                 <img src="<?= htmlspecialchars($user['filepath']) ?>" class="mr-8 w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 rounded-full cursor-pointer object-cover hover:opacity-50" alt="Profile Photo">
@@ -116,7 +116,7 @@ foreach ($lists as $list) {
     <form method="GET" action="" class="flex gap-4 mb-6">
         <input type="text" name="search" value="<?= htmlspecialchars($search_query) ?>" placeholder="Search To-Do Lists"
             class="border border-red-800 p-2 rounded w-full">
-        <button type="submit" class="bg-blue-600 hover:bg-blue-300 text-white px-4 py-2 rounded">Search</button>
+        <button type="submit" class="bg-blue-500 hover:bg-blue-300 text-white px-4 py-2 rounded">Search</button>
         <button type="button" class="bg-red-500 hover:bg-red-300 text-white px-4 py-2 rounded"
             onclick="window.location.href='<?= htmlspecialchars($_SERVER['PHP_SELF']) ?>';">Reset</button>
     </form>
