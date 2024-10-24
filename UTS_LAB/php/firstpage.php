@@ -49,7 +49,7 @@
 <body class="poppins-regular">
 
     <header class="flex justify-between items-center p-6 bg-white shadow-md">
-        <img class="w-32 h-20" src="../photos/logo.png"></img>
+        <img class="w-30 h-20" src="../photos/logo.png"></img>
         <div class="space-x-2 md:space-x-4">
             <a href="login.php">
                 <button class="bg-red-500 text-white px-3 py-2 md:px-4 

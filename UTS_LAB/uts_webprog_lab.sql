@@ -2,10 +2,10 @@
 -- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Generation Time: Oct 13, 2024 at 10:10 AM
--- Server version: 10.4.32-MariaDB
--- PHP Version: 8.2.12
+-- Host: localhost
+-- Generation Time: Oct 24, 2024 at 08:08 AM
+-- Server version: 10.4.28-MariaDB
+-- PHP Version: 8.2.4
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `uts_pti_lab`
+-- Database: `uts_webprog_lab`
 --
 
 -- --------------------------------------------------------
@@ -49,7 +49,9 @@ INSERT INTO `tasks` (`id`, `todo_id`, `task`, `description`, `is_checked`) VALUE
 (93, 28, 'makan', 'kerja bosku', 1),
 (94, 28, 'tidur', 'kerja bosku', 0),
 (95, 28, 'ok', 'kerja bosku', 1),
-(96, 28, 'slebew', 'kerja bosku', 0);
+(96, 28, 'slebew', 'kerja bosku', 0),
+(129, 38, 'selesaiin webprog', 'test', 0),
+(130, 38, 'jalan jalan', 'test', 0);
 
 -- --------------------------------------------------------
 
@@ -72,7 +74,8 @@ CREATE TABLE `todo_lists` (
 INSERT INTO `todo_lists` (`id`, `user_id`, `title`, `created_at`, `category`) VALUES
 (26, 8, 'ngajar', '2024-10-09 07:58:12', 'Work'),
 (27, 8, 'hi', '2024-10-09 07:58:58', 'Work'),
-(28, 8, 'Kerja', '2024-10-12 06:10:59', 'Personal');
+(28, 8, 'Kerja', '2024-10-12 06:10:59', 'Personal'),
+(38, 19, 'Hai', '2024-10-24 04:04:15', 'Work');
 
 -- --------------------------------------------------------
 
@@ -99,7 +102,8 @@ INSERT INTO `users` (`id`, `username`, `email`, `date`, `password`, `created_at`
 (10, 'Frendhyy', 'frendhyzhuangg@gmail.com', '2005-01-26', '$2y$10$DH.YTePtbFUFny1V/Bo/eO2I85ozHMjDwlgtYHHYfnlpp2jvm/xci', '2024-10-09 06:52:31', 'uploads/SNAPSHOT.png'),
 (11, 'Budi', 'budi123@gmail.com', '2023-11-11', '$2y$10$7GDdhXKXggCj4rrdih7iS.CAtZWlBgow2p9al8UihROdDjkTj.VUe', '2024-10-12 17:19:38', 'uploads/SNAPSHOT.png'),
 (16, 'Siti', 'siti@gmail.com', '2005-01-25', '$2y$10$wfbXyjeXYCr60kuPZ/KTsOSQHenlazd88Pb1WrhjHaOueXUPO73Yu', '2024-10-12 18:29:57', 'uploads/Dokumentasi.png'),
-(17, 'Andi', 'andi@gmail.com', '2005-02-02', '$2y$10$nq/qndY.aAMfrKXmg5nmQeOjXG/b3qrdv8ArtaOMrrujGXbs6qBp6', '2024-10-12 18:31:01', 'uploads/Frame 7 (1).png');
+(17, 'Andi', 'andi@gmail.com', '2005-02-02', '$2y$10$nq/qndY.aAMfrKXmg5nmQeOjXG/b3qrdv8ArtaOMrrujGXbs6qBp6', '2024-10-12 18:31:01', 'uploads/Frame 7 (1).png'),
+(19, 'audreyy', 'audrey@gmail.com', '2005-10-05', '$2y$10$E/I2SZe0m.vBfjqSQpbc0e1gY445C.Fxd9hgYZsxRmAzFR4a6UHIW', '2024-10-24 03:59:38', 'uploads/Untitled Catalog 00771.JPG');
 
 --
 -- Indexes for dumped tables
@@ -134,19 +138,19 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `tasks`
 --
 ALTER TABLE `tasks`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=97;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=131;
 
 --
 -- AUTO_INCREMENT for table `todo_lists`
 --
 ALTER TABLE `todo_lists`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=39;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
 -- Constraints for dumped tables

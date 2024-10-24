@@ -107,7 +107,7 @@ foreach ($lists as $list) {
             <a href="create_todo.php" class="bg-red-700 text-white px-5 py-2 mr-2 rounded-md hover:bg-red-500 transition">Create To-Do List</a>
             <a href="create_todo.php"><span class="material-icons-outlined mr-4 mt-2">add_task</span></a>
             <a href="profile.php">
-                <img src="<?= htmlspecialchars($user['filepath']) ?>" class="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 rounded-full cursor-pointer object-cover hover:opacity-50" alt="Profile Photo">
+                <img src="<?= htmlspecialchars($user['filepath']) ?>" class="mr-8 w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 rounded-full cursor-pointer object-cover hover:opacity-50" alt="Profile Photo">
             </a>
         </div>
     </div>
