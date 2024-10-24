@@ -98,7 +98,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         </span>
     </a>
     <a href="firstpage.php" class="text-blue hover:text-blue-700 ml-6 font-bold text-lg hover:underline">&larr;</a>
-    <h1 class="text-3xl text-center font-bold text-[#1E3A8A] mt-16">Hello, Welcome Back! We Miss You! </h1>
+    <h1 class="text-3xl text-center font-bold text-[#1E3A8A] mt-20">Hello, Welcome Back! We Miss You! </h1>
     <div class="max-w-md mx-auto mt-8 bg-white shadow-md rounded px-8 pt-6 pb-8">
         <h1 class="text-3xl font-bold mb-6 text-center">Login</h1>
         <form action="login.php" method="POST">
@@ -114,10 +114,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 <span class="toggle-password pt-6" onclick="togglePassword()">🙈</span>
             </div>
             <div class="flex items-center justify-between">
-                <button type="submit" class="bg-red-500 hover:bg-red-200 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+                <button type="submit" class="bg-red-500 hover:bg-red-200 text-white font-bold py-2 px-4 mt-4 rounded focus:outline-none focus:shadow-outline">
                     Login
                 </button>
-                <a href="forgot_password.php" class="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800">
+                <a href="forgot_password.php" class="inline-block align-baseline font-bold mt-4 text-sm text-blue-500 hover:text-blue-800">
                     Forgot Password?
                 </a>
             </div>
