@@ -61,7 +61,7 @@
 
     <main class="text-center mt-10 px-4">
         <h1 class="text-5xl text-center italic font-bold text-blue-900 mt-16">WELCOME TO ULIST ! </h1>
-        <h1 class="text-2xl md:text-3xl mt-16 font-bold text-red-800 italic mb-2 animate-bounce">"one way to make your daily life easier, faster, and quicker!"</h1>
+        <h1 class="text-2xl md:text-3xl mt-20 font-bold text-red-800 italic mb-4 animate-bounce">"One way to make your daily life easier, faster, and quicker!"</h1>
         <h2 class="text-xl md:text-2xl font-bold text-red-500 mt-10 mb-7">What can you do ? Anything that you need !!</h2>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-10 max-w-4xl mx-auto">
@@ -104,7 +104,7 @@
                 <p class="font-bold">- May, Lecturer at Korea University</p>
             </div>
         </div>
-        <h3 class="text-5xl md:text-7xl font-bold text-red-500 mb-5 mt-10">1000+</h3>
+        <h3 class="text-5xl md:text-7xl font-bold text-red-500 mb-5 mt-16">1000+</h3>
         <h3 class="text-2xl md:text-2xl font-bold text-red-500 mb-5 mt-4">New Users Everyday! Come Join Us Now !!</h3>
 
     </main>
