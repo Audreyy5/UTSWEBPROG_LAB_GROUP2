@@ -102,7 +102,6 @@ foreach ($lists as $list) {
 <body class="p-6 bg-red-50 poppins-regular">
     <div class="mb-5 flex flex-col sm:flex-row items-center justify-between">
         <img class="w-32 h-22" src="../photos/logo.png"></img>
-
         <h1 class="text-2xl text-center font-bold mb-4 sm:mb-0">Welcome, <?= htmlspecialchars($user['username']) ?>! What do you want to do today?</h1>
         <div class="flex items-center mt-4 sm:mt-0">
             <a href="create_todo.php" class="bg-red-700 text-white px-5 py-2 mr-2 rounded-md hover:bg-red-500 transition">Create To-Do List</a>
@@ -149,7 +148,7 @@ foreach ($lists as $list) {
             <?php endif; ?>
         </div>
 
-        <h2 class="text-xl font-semibold mb-4">Personal</h2>
+        <h2 class="text-xl font-semibold mb-4 mt-5">Personal</h2>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             <?php foreach ($categories['Personal'] as $list): ?>
                 <a href="view_todo.php?id=<?= urlencode($list['id']) ?>" class="todo-card hover:bg-gray-200">
@@ -175,7 +174,7 @@ foreach ($lists as $list) {
             <?php endif; ?>
         </div>
 
-        <h2 class="text-xl font-semibold mb-4">Other</h2>
+        <h2 class="text-xl font-semibold mb-4 mt-5">Other</h2>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             <?php foreach ($categories['Other'] as $list): ?>
                 <a href="view_todo.php?id=<?= urlencode($list['id']) ?>" class="todo-card hover:bg-gray-200">
